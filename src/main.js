@@ -1,12 +1,17 @@
 import Vue from 'vue'
+import Toast from 'vue2-toast'
+import router from '@/router'
 import store from '@/store'
 import App from '@/App'
-import MpvueRouterPatch from 'mpvue-router-patch'
+import 'minireset.css'
+import 'vue2-toast/lib/toast.css'
 
+Vue.use(Toast)
 Vue.config.productionTip = false
-Vue.use(MpvueRouterPatch)
 
 const app = new Vue({
+  el: '#app',
+  router,
   store,
   ...App
 })

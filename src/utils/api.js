@@ -1,8 +1,8 @@
 import request from './request'
 
-const baseUrlApi = 'https://api.ithome.com'
-const baseUrlDyn = 'https://dyn.ithome.com'
-const baseUrlQuan = 'https://apiquan.ithome.com'
+const baseUrlApi = '/api'
+const baseUrlDyn = '/dyn'
+const baseUrlQuan = '/apiquan'
 
 const api = {
   getNewsList: (r) => request.get('/json/newslist/news', null, {
